@@ -9,6 +9,8 @@
 - GC無し
 - ランタイムはある(非同期IOを駆動/グリーンスレッドのコンテキストスイッチ)
 - IOはcompletion basedな非同期IO(特にio_uring)
+  - io_uringは速いとのウワサなので最大限に活用したい
+  - 特に，動的メモリ確保無しでやりたい
 - strucutured concurrency(非同期計算がスコープに閉じ込められる)
 - 暗黙のasync/await(全ての関数がasync)
 - 後大体Rustのパクり
